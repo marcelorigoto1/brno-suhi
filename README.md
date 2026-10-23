@@ -2,7 +2,7 @@
 
 How has the surface urban heat island of Brno (Czech Republic) changed over the last 25 years, where is the city hottest, and why? This repository answers that with free satellite data only: **Landsat Collection 2 Level-2 surface temperature** (Landsat 5, 7, 8, 9) loaded as a **data cube** from the Microsoft Planetary Computer STAC catalogue, processed in one Python notebook.
 
-**[Open the interactive dashboard]([(https://marcelorigoto1.github.io/brno-suhi/)])** · three synchronised maps (early, middle and recent summer) with true colour, surface heat, vegetation and land cover over the ČÚZK orthophoto, a click inspector, the places that warmed or cooled most, and a year-by-year viewer (2000–2026) with a play button. The yearly images are stored in `docs/years/` (also an animated `heat_by_year.gif`), so upload that folder together with `docs/index.html`.
+**https://marcelorigoto1.github.io/brno-suhi/** · three synchronised maps (early, middle and recent summer) with true colour, surface heat, vegetation and land cover over the ČÚZK orthophoto, a click inspector, the places that warmed or cooled most, and a year-by-year viewer (2000–2026) with a play button. The yearly images are stored in `docs/years/` (also an animated `heat_by_year.gif`), so upload that folder together with `docs/index.html`.
 
 ## Method
 
