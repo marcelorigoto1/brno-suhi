@@ -27,20 +27,6 @@ No account or API key is needed (the optional MapTiler basemap reads `MAPTILER_K
 
 On Windows with PostGIS installed, the first cell removes `PROJ_LIB` / `PROJ_DATA` so rasterio uses its own projection database.
 
-## Results
-
-Results of the run of 21 October 2026 (120 clear summer scenes in 26 of 27 summers; land use and 83,773 buildings from OpenStreetMap). Brno's summer surfaces at the morning overpass warmed by about 0.9 °C per decade, at the same rate as the surrounding farmland, once the month of each scene is taken into account. The heat island itself (urban minus farmland) is about 5.8 °C in June, 4.6 °C in July and close to zero in late August, when harvested fields heat up, and it shows no trend after adjusting for month (−0.1 ± 0.3 °C per decade). The apparent rise from 0.3 °C in 2000–2004 to 3.6 °C in 2020–2026 comes from the calendar: 69 % of the early scenes are from August against 29 % recently (`outputs/robustness_month_adjusted.csv`, `robustness_season_sensor.csv`). Relative to forest, the city warmed by 0.3 to 0.7 °C per decade depending on the method (p = 0.06 month-adjusted, 0.02 on annual medians).
-
-The spatial pattern is stable. Compact mid-rise blocks (+5.5 °C), compact low-rise and large low-rise buildings (+5.0 °C) are the hottest Local Climate Zones, dense trees and water are 5.7 °C cooler, and NDVI explains 87 % of the variance on a 300 m grid, with 1.9 °C of cooling per 0.1 NDVI. Industry and transport areas are 6.2 °C warmer than the area mean, and the warmest districts are Slatina, Černovice, Brno-střed, Brno-jih and Židenice. The strongest local warming occurs where farmland was converted to warehouses and industrial halls in the south and east of the city.
-
-## Limitations
-
-Landsat measures **surface** (not air) temperature at about 10:00, so the stronger afternoon and night heat island is not captured. Daytime heat-island values depend on the state of the surrounding farmland (e.g. the 2018 drought), and the record mixes Landsat 5/7 and 8/9 sensors. Land use and buildings come from present-day OpenStreetMap. Collection 2 uses vegetation in its emissivity estimate, which strengthens the NDVI–temperature relationship.
-
-## Publishing the dashboard
-
-The dashboard is a single static HTML file with all data embedded, so GitHub Pages can host it: push the repository, then in Settings, Pages, choose branch `main` and folder `/docs`. The default basemaps (ČÚZK orthophoto, Esri imagery, CARTO) and the Planetary Computer data need no key. A MapTiler key, if used, is visible to anyone who opens the page source; restrict it to your Pages domain under allowed HTTP origins in MapTiler Cloud.
-
 ## Data and credits
 
 Landsat: USGS/NASA (public domain), via Microsoft Planetary Computer · Copernicus DEM GLO-30 and ESA WorldCover · © OpenStreetMap contributors (ODbL) · Global LCZ map: Demuzere et al. (2022), *ESSD* 14: 3835–3873 · Dashboard basemaps: orthophoto © ČÚZK, imagery © Esri, © CARTO.
